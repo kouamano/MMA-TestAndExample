@@ -1,0 +1,539 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     15507,        530]
+NotebookOptionsPosition[     12695,        424]
+NotebookOutlinePosition[     13041,        439]
+CellTagsIndexPosition[     12998,        436]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Get", "[", "\"\<! echo $OMP_NUM_THREADS\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.45902738446419*^9, 3.459027396654055*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.4590273981070232`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SubKernels`LocalKernels`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.458968394077139*^9, 3.458968418201974*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloseKernels", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.4589695638364077`*^9, 3.458969568162383*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"5", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"6", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"7", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"8", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.458969568566029*^9, 3.458969626912964*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["--cpunodebind", "Subsubsection",
+ CellChangeTimes->{{3.458968757273307*^9, 3.4589687592425213`*^9}, {
+  3.458969670142055*^9, 3.458969670621443*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpunodebind=0 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.458968449920549*^9}, {
+  3.4589696774964457`*^9, 3.458969678099128*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"13", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.458968453674727*^9, 3.458969631877083*^9, 
+  3.4589696842869368`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpunodebind=1 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.4589684761752653`*^9}, {
+  3.4589696885520897`*^9, 3.4589696891482067`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"14", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.4589684786587057`*^9, 3.458969632484509*^9, 
+  3.458969690674724*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpunodebind=0 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.4589684847131653`*^9}, {
+  3.458968553037693*^9, 3.4589685535107517`*^9}, {3.458969695298777*^9, 
+  3.458969695748374*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"15", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.458968486173914*^9, 3.458968554674934*^9, 
+  3.458969633079404*^9, 3.458969696690666*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpunodebind=1 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.4589684761752653`*^9}, {
+  3.458969701192191*^9, 3.458969701631157*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"16", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.4589685651321507`*^9, 3.458969634250524*^9, 
+  3.458969702618031*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Timing", "[", 
+  RowBox[{
+   RowBox[{"ParallelTable", "[", 
+    RowBox[{"a", ",", 
+     RowBox[{"{", "20000000", "}"}]}], "]"}], ";"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4589685693294897`*^9, 3.458968590112338*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"39.309023999999994`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.45896863023025*^9, 3.458969756806271*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Timing", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{"a", ",", 
+     RowBox[{"{", "20000000", "}"}]}], "]"}], ";"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4589685693294897`*^9, 3.458968590112338*^9}, {
+  3.458968638392414*^9, 3.458968639745521*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1.6047559999999947`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.4589686418948727`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloseKernels", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.458968717977228*^9, 3.458968726572205*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"1", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"2", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"3", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"4", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.458968727637621*^9}]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["--cpubind", "Subsubsection",
+ CellChangeTimes->{{3.458968757273307*^9, 3.4589687592425213`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpubind=0 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.458968449920549*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"9", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.458968453674727*^9, 3.458969631877083*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpubind=1 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.4589684761752653`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"10", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.4589684786587057`*^9, 3.458969632484509*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpubind=0 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.4589684847131653`*^9}, {
+  3.458968553037693*^9, 3.4589685535107517`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"11", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.458968486173914*^9, 3.458968554674934*^9, 
+  3.458969633079404*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --cpubind=1 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.4589684761752653`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"12", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.4589685651321507`*^9, 3.458969634250524*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Timing", "[", 
+  RowBox[{
+   RowBox[{"ParallelTable", "[", 
+    RowBox[{"a", ",", 
+     RowBox[{"{", "20000000", "}"}]}], "]"}], ";"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4589685693294897`*^9, 3.458968590112338*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"39.068059999999996`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.45896863023025*^9, 3.4589696740652523`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Timing", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{"a", ",", 
+     RowBox[{"{", "20000000", "}"}]}], "]"}], ";"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4589685693294897`*^9, 3.458968590112338*^9}, {
+  3.458968638392414*^9, 3.458968639745521*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1.7437340000000034`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.4589686418948727`*^9, 3.458969676024825*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloseKernels", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.458968717977228*^9, 3.458968726572205*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"9", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"10", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], 
+   ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"11", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}], 
+   ",", 
+   RowBox[{"KernelObject", "[", 
+    RowBox[{"12", ",", "\<\"local\"\>", ",", "\<\"<defunct>\"\>"}], "]"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.458968727637621*^9, 3.4589696761487617`*^9}]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["--physcpubind", "Subsubsection",
+ CellChangeTimes->{{3.458968782159554*^9, 3.458968792698305*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --physcpubind=0 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.458968449920549*^9}, {
+  3.458968809981575*^9, 3.458968816933577*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"1", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.4589688193070583`*^9, 3.458969574919331*^9, 
+  3.459027423188259*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --physcpubind=1 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.458968449920549*^9}, {
+  3.458968809981575*^9, 3.458968825751182*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"2", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.4589688267138042`*^9, 3.4589695756307707`*^9, 
+  3.459027423815578*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --physcpubind=2 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.458968449920549*^9}, {
+  3.458968809981575*^9, 3.458968832433688*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"3", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.458968833315715*^9, 3.458969576191156*^9, 
+  3.459027424376561*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaunchKernels", "[", 
+  RowBox[{
+  "LocalMachine", "[", 
+   "\"\<numactl --physcpubind=3 \
+/usr/local/Wolfram/Mathematica/7.0/Executables/math -subkernel -noinit \
+-mathlink\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.45896842509127*^9, 3.458968449920549*^9}, {
+  3.458968809981575*^9, 3.458968840381918*^9}}],
+
+Cell[BoxData[
+ RowBox[{"KernelObject", "[", 
+  RowBox[{"4", ",", "\<\"local\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.45896884139146*^9, 3.4589695773813562`*^9, 
+  3.459027424991867*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Timing", "[", 
+  RowBox[{
+   RowBox[{"ParallelTable", "[", 
+    RowBox[{"a", ",", 
+     RowBox[{"{", "20000000", "}"}]}], "]"}], ";"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4589685693294897`*^9, 3.458968590112338*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"38.06121400000001`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.45896863023025*^9, 3.45896889658293*^9, 
+  3.458969622309635*^9, 3.459027470539385*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{Automatic, 131}, {Automatic, 25}},
+FrontEndVersion->"7.0 for Linux x86 (64-bit) (2009\:5e744\:670823\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 151, 2, 32, "Input"],
+Cell[721, 26, 72, 1, 31, "Output"]
+}, Open  ]],
+Cell[808, 30, 155, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[988, 36, 128, 2, 32, "Input"],
+Cell[1119, 40, 572, 12, 92, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1728, 57, 155, 2, 29, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[1908, 63, 343, 8, 121, "Input"],
+Cell[2254, 73, 193, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2484, 82, 347, 8, 121, "Input"],
+Cell[2834, 92, 193, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3064, 101, 394, 9, 121, "Input"],
+Cell[3461, 112, 213, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3711, 121, 343, 8, 121, "Input"],
+Cell[4057, 131, 193, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4287, 140, 244, 6, 32, "Input"],
+Cell[4534, 148, 157, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4728, 156, 285, 7, 32, "Input"],
+Cell[5016, 165, 138, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5191, 173, 126, 2, 32, "Input"],
+Cell[5320, 177, 550, 12, 92, "Output"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[5919, 195, 102, 1, 23, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[6046, 200, 288, 7, 121, "Input"],
+Cell[6337, 209, 165, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6539, 217, 290, 7, 121, "Input"],
+Cell[6832, 226, 168, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7037, 234, 341, 8, 121, "Input"],
+Cell[7381, 244, 191, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7609, 253, 290, 7, 121, "Input"],
+Cell[7902, 262, 168, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8107, 270, 244, 6, 32, "Input"],
+Cell[8354, 278, 159, 3, 70, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8550, 286, 285, 7, 32, "Input"],
+Cell[8838, 295, 160, 3, 70, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9035, 303, 126, 2, 32, "Input"],
+Cell[9164, 307, 585, 14, 70, "Output"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9798, 327, 104, 1, 23, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[9927, 332, 341, 8, 121, "Input"],
+Cell[10271, 342, 192, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10500, 351, 341, 8, 121, "Input"],
+Cell[10844, 361, 194, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11075, 370, 341, 8, 121, "Input"],
+Cell[11419, 380, 190, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11646, 389, 341, 8, 121, "Input"],
+Cell[11990, 399, 191, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12218, 408, 244, 6, 32, "Input"],
+Cell[12465, 416, 202, 4, 31, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
