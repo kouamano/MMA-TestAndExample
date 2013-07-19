@@ -1,0 +1,234 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica ' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6785,        225]
+NotebookOptionsPosition[      5688,        180]
+NotebookOutlinePosition[      6020,        195]
+CellTagsIndexPosition[      5977,        192]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:65e5\:672c\:8a9e\:306e\:30c6\:30b9\:30c8", "Title",
+ CellChangeTimes->{{3.5793218591922283`*^9, 3.579321867157176*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:307b\:3052", "=", "5"}]], "Input",
+ CellChangeTimes->{{3.579321878298273*^9, 3.57932187938944*^9}}],
+
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{3.579321880363006*^9, 3.579321993480398*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:307b\:3052\:307b\:3052", "=", "10"}]], "Input",
+ CellChangeTimes->{{3.57932189772663*^9, 3.579321898636282*^9}}],
+
+Cell[BoxData["10"], "Output",
+ CellChangeTimes->{3.5793218992535677`*^9, 3.579321993627989*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:6728", "=", "tree"}]], "Input",
+ CellChangeTimes->{{3.57932191745893*^9, 3.5793219266163797`*^9}}],
+
+Cell[BoxData["tree"], "Output",
+ CellChangeTimes->{3.5793219271114607`*^9, 3.579321993662505*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:307b\:3052", "+", "\:307b\:3052\:307b\:3052"}]], "Input",
+ CellChangeTimes->{{3.579322003507421*^9, 3.579322010964052*^9}}],
+
+Cell[BoxData["15"], "Output",
+ CellChangeTimes->{3.5793220141036873`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindClusters", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<\:307b\:3052\>\"", ",", "\"\<\:3042\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<\:307b\:3052\:307b\:3052\>\"", ",", "\"\<\:3044\>\""}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<\:307b\:3052\:3052\>\"", ",", "\"\<\:3044\>\""}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<\:3042\:3046\:3093\>\"", ",", "\"\<\:3044\>\""}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<\:3042\:3044\>\"", ",", "\"\<\:3042\>\""}], "}"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5793221497497387`*^9, 3.579322280610161*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"FindClusters", "::", "amtd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"FindClusters is unable to automatically select an \
+appropriate dissimilarity function for the input data \
+\[NoBreak]\\!\\({\\(\\({\\\"\\\\:307b\\\\:3052\\\", \\\"\\\\:3042\\\"}\\)\\), \
+\\(\\({\\\"\\\\:307b\\\\:3052\\\\:307b\\\\:3052\\\", \
+\\\"\\\\:3044\\\"}\\)\\), \\(\\({\\\"\\\\:307b\\\\:3052\\\\:3052\\\", \
+\\\"\\\\:3044\\\"}\\)\\), \\(\\({\\\"\\\\:3042\\\\:3046\\\\:3093\\\", \
+\\\"\\\\:3044\\\"}\\)\\), \\(\\({\\\"\\\\:3042\\\\:3044\\\", \
+\\\"\\\\:3042\\\"}\\)\\)}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/FindClusters\\\", ButtonNote -> \
+\\\"FindClusters::amtd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.579322283660425*^9}],
+
+Cell[BoxData[
+ RowBox[{"FindClusters", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\<\"\:307b\:3052\"\>", ",", "\<\"\:3042\"\>"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\<\"\:307b\:3052\:307b\:3052\"\>", ",", "\<\"\:3044\"\>"}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\<\"\:307b\:3052\:3052\"\>", ",", "\<\"\:3044\"\>"}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{"\<\"\:3042\:3046\:3093\"\>", ",", "\<\"\:3044\"\>"}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{"\<\"\:3042\:3044\"\>", ",", "\<\"\:3042\"\>"}], "}"}]}], "}"}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.5793222836642847`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindClusters", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<iih\>\"", ",", "\"\<ibm\>\"", ",", "\"\<hal\>\""}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.57932230253065*^9, 3.579322323686956*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"iih\"\>", ",", "\<\"ibm\"\>"}], "}"}], ",", 
+   RowBox[{"{", "\<\"hal\"\>", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.57932232598172*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindClusters", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", "\"\<iih\>\"", "}"}], ",", 
+    RowBox[{"{", "\"\<ibm\>\"", "}"}], ",", 
+    RowBox[{"{", "\"\<hal\>\"", "}"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.57932230253065*^9, 3.579322350025202*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"FindClusters", "::", "amtd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"FindClusters is unable to automatically select an \
+appropriate dissimilarity function for the input data \
+\[NoBreak]\\!\\({\\(\\({\\\"iih\\\"}\\)\\), \\(\\({\\\"ibm\\\"}\\)\\), \
+\\(\\({\\\"hal\\\"}\\)\\)}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/FindClusters\\\", ButtonNote -> \
+\\\"FindClusters::amtd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.579322350776042*^9}],
+
+Cell[BoxData[
+ RowBox[{"FindClusters", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", "\<\"iih\"\>", "}"}], ",", 
+    RowBox[{"{", "\<\"ibm\"\>", "}"}], ",", 
+    RowBox[{"{", "\<\"hal\"\>", "}"}]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.579322350778339*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 867},
+WindowMargins->{{98, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (May 21, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 127, 1, 96, "Title"],
+Cell[CellGroupData[{
+Cell[732, 27, 125, 2, 34, "Input"],
+Cell[860, 31, 92, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[989, 37, 138, 2, 34, "Input"],
+Cell[1130, 41, 95, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1262, 47, 124, 2, 34, "Input"],
+Cell[1389, 51, 97, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1523, 57, 149, 2, 34, "Input"],
+Cell[1675, 61, 73, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1785, 67, 668, 18, 62, "Input"],
+Cell[2456, 87, 871, 16, 63, "Message"],
+Cell[3330, 105, 645, 18, 60, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4012, 128, 220, 5, 32, "Input"],
+Cell[4235, 135, 217, 6, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4489, 146, 292, 7, 32, "Input"],
+Cell[4784, 155, 603, 12, 61, "Message"],
+Cell[5390, 169, 270, 7, 65, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
