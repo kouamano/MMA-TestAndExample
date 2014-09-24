@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14565,        423]
-NotebookOptionsPosition[     13497,        379]
-NotebookOutlinePosition[     13840,        394]
-CellTagsIndexPosition[     13797,        391]
+NotebookDataLength[     43454,       1171]
+NotebookOptionsPosition[     41669,       1102]
+NotebookOutlinePosition[     42005,       1117]
+CellTagsIndexPosition[     41962,       1114]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -334,8 +334,9 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell["distribution test", "Section",
- CellChangeTimes->{{3.6205322033766737`*^9, 3.620532232330711*^9}}],
+Cell["distribution test (1)", "Section",
+ CellChangeTimes->{{3.6205322033766737`*^9, 3.620532232330711*^9}, {
+  3.6205327209622507`*^9, 3.62053272249059*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -372,14 +373,736 @@ Cell[BoxData[
  RowBox[{"{", 
   TagBox["t2",
    HoldForm], "}"}]], "Output",
- CellChangeTimes->{3.620532309912532*^9}]
+ CellChangeTimes->{3.620532309912532*^9, 3.620532508911281*^9, 
+  3.6205328460233192`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"ParallelSubmit", "[", 
+    RowBox[{
+     RowBox[{"{", "n", "}"}], ",", 
+     RowBox[{"t2", "[", 
+      RowBox[{"[", "n", "]"}], "]"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6205287971569033`*^9, 3.6205288991921577`*^9}, {
+  3.620528946412315*^9, 3.620528951638055*^9}, {3.620529173385828*^9, 
+  3.6205291977707*^9}, {3.620529414077973*^9, 3.6205294429354153`*^9}, {
+  3.620530066733399*^9, 3.620530073220759*^9}, {3.6205301294254313`*^9, 
+  3.620530146818507*^9}, {3.620532588942971*^9, 3.6205325965573397`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   InterpretationBox[
+    FrameBox[
+     TemplateBox[{DynamicBox[
+        ToBoxes[
+         Parallel`Concurrency`Private`evalIcon[
+          ReplaceAll[
+           Parallel`Developer`ProcessState[
+            EvaluationObject[1, 
+             Part[$CellContext`t2, 1], Null, 
+             Parallel`Concurrency`Private`state$870]], 
+           Parallel`Concurrency`Private`stateTrans]], StandardForm]],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {6, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[6]],TagBox[
+        GridBox[{{
+           PaneBox[
+            StyleBox[
+             TagBox[
+              
+              RowBox[{"t2", "\[LeftDoubleBracket]", "1", 
+                "\[RightDoubleBracket]"}], Short[#, 0.6]& ], Small, 
+             StripOnInput -> False], ImageSize -> {Full, 18}, ImageSizeAction -> 
+            "ResizeToFit"]}, {
+           DynamicBox[
+            ToBoxes[
+             Style[
+              ReplaceAll[
+               Parallel`Developer`ProcessState[
+                EvaluationObject[1, 
+                 Part[$CellContext`t2, 1], Null, 
+                 Parallel`Concurrency`Private`state$870]], {
+               Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
+                "ready for processing", Parallel`Developer`running[
+                  Pattern[Parallel`Concurrency`Private`k, 
+                   Blank[]]] :> StringForm["running on kernel `1`", 
+                  Parallel`Developer`KernelID[
+                  Parallel`Concurrency`Private`k]], 
+                Parallel`Developer`finished[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "received", 
+                Parallel`Developer`dequeued[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "finished", 
+                Pattern[Parallel`Concurrency`Private`e, 
+                  Blank[]] :> Parallel`Concurrency`Private`e}], "Label", 
+              Gray], StandardForm]]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {"Columns" -> {{10}}, "Rows" -> {{Automatic}}}], 
+        "Column"]},
+      "RowDefault"],
+     Background->Dynamic[
+       Part[Parallel`Concurrency`Private`bgColors, 
+        ReplaceAll[
+         Parallel`Developer`ProcessState[
+          EvaluationObject[1, 
+           Part[$CellContext`t2, 1], Null, 
+           Parallel`Concurrency`Private`state$870]], 
+         Parallel`Concurrency`Private`stateTrans]]],
+     FrameMargins->5,
+     FrameStyle->GrayLevel[0.5],
+     RoundingRadius->6,
+     StripOnInput->False],
+    EvaluationObject[1, 
+     Part[$CellContext`t2, 1], Null, Parallel`Concurrency`Private`state$870]],
+    ",", 
+   InterpretationBox[
+    FrameBox[
+     TemplateBox[{DynamicBox[
+        ToBoxes[
+         Parallel`Concurrency`Private`evalIcon[
+          ReplaceAll[
+           Parallel`Developer`ProcessState[
+            EvaluationObject[2, 
+             Part[$CellContext`t2, 2], Null, 
+             Parallel`Concurrency`Private`state$871]], 
+           Parallel`Concurrency`Private`stateTrans]], StandardForm]],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {6, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[6]],TagBox[
+        GridBox[{{
+           PaneBox[
+            StyleBox[
+             TagBox[
+              
+              RowBox[{"t2", "\[LeftDoubleBracket]", "2", 
+                "\[RightDoubleBracket]"}], Short[#, 0.6]& ], Small, 
+             StripOnInput -> False], ImageSize -> {Full, 18}, ImageSizeAction -> 
+            "ResizeToFit"]}, {
+           DynamicBox[
+            ToBoxes[
+             Style[
+              ReplaceAll[
+               Parallel`Developer`ProcessState[
+                EvaluationObject[2, 
+                 Part[$CellContext`t2, 2], Null, 
+                 Parallel`Concurrency`Private`state$871]], {
+               Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
+                "ready for processing", Parallel`Developer`running[
+                  Pattern[Parallel`Concurrency`Private`k, 
+                   Blank[]]] :> StringForm["running on kernel `1`", 
+                  Parallel`Developer`KernelID[
+                  Parallel`Concurrency`Private`k]], 
+                Parallel`Developer`finished[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "received", 
+                Parallel`Developer`dequeued[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "finished", 
+                Pattern[Parallel`Concurrency`Private`e, 
+                  Blank[]] :> Parallel`Concurrency`Private`e}], "Label", 
+              Gray], StandardForm]]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {"Columns" -> {{10}}, "Rows" -> {{Automatic}}}], 
+        "Column"]},
+      "RowDefault"],
+     Background->Dynamic[
+       Part[Parallel`Concurrency`Private`bgColors, 
+        ReplaceAll[
+         Parallel`Developer`ProcessState[
+          EvaluationObject[2, 
+           Part[$CellContext`t2, 2], Null, 
+           Parallel`Concurrency`Private`state$871]], 
+         Parallel`Concurrency`Private`stateTrans]]],
+     FrameMargins->5,
+     FrameStyle->GrayLevel[0.5],
+     RoundingRadius->6,
+     StripOnInput->False],
+    EvaluationObject[2, 
+     Part[$CellContext`t2, 2], Null, Parallel`Concurrency`Private`state$871]],
+    ",", 
+   InterpretationBox[
+    FrameBox[
+     TemplateBox[{DynamicBox[
+        ToBoxes[
+         Parallel`Concurrency`Private`evalIcon[
+          ReplaceAll[
+           Parallel`Developer`ProcessState[
+            EvaluationObject[3, 
+             Part[$CellContext`t2, 3], Null, 
+             Parallel`Concurrency`Private`state$872]], 
+           Parallel`Concurrency`Private`stateTrans]], StandardForm]],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {6, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[6]],TagBox[
+        GridBox[{{
+           PaneBox[
+            StyleBox[
+             TagBox[
+              
+              RowBox[{"t2", "\[LeftDoubleBracket]", "3", 
+                "\[RightDoubleBracket]"}], Short[#, 0.6]& ], Small, 
+             StripOnInput -> False], ImageSize -> {Full, 18}, ImageSizeAction -> 
+            "ResizeToFit"]}, {
+           DynamicBox[
+            ToBoxes[
+             Style[
+              ReplaceAll[
+               Parallel`Developer`ProcessState[
+                EvaluationObject[3, 
+                 Part[$CellContext`t2, 3], Null, 
+                 Parallel`Concurrency`Private`state$872]], {
+               Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
+                "ready for processing", Parallel`Developer`running[
+                  Pattern[Parallel`Concurrency`Private`k, 
+                   Blank[]]] :> StringForm["running on kernel `1`", 
+                  Parallel`Developer`KernelID[
+                  Parallel`Concurrency`Private`k]], 
+                Parallel`Developer`finished[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "received", 
+                Parallel`Developer`dequeued[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "finished", 
+                Pattern[Parallel`Concurrency`Private`e, 
+                  Blank[]] :> Parallel`Concurrency`Private`e}], "Label", 
+              Gray], StandardForm]]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {"Columns" -> {{10}}, "Rows" -> {{Automatic}}}], 
+        "Column"]},
+      "RowDefault"],
+     Background->Dynamic[
+       Part[Parallel`Concurrency`Private`bgColors, 
+        ReplaceAll[
+         Parallel`Developer`ProcessState[
+          EvaluationObject[3, 
+           Part[$CellContext`t2, 3], Null, 
+           Parallel`Concurrency`Private`state$872]], 
+         Parallel`Concurrency`Private`stateTrans]]],
+     FrameMargins->5,
+     FrameStyle->GrayLevel[0.5],
+     RoundingRadius->6,
+     StripOnInput->False],
+    EvaluationObject[3, 
+     Part[$CellContext`t2, 3], Null, 
+     Parallel`Concurrency`Private`state$872]]}], "}"}]], "Output",
+ CellChangeTimes->{3.6205326062371817`*^9, 3.620532677459939*^9, 
+  3.6205328586527243`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WaitAll", "[", "%", "]"}]], "Input"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          TemplateBox[{"1"},
+           "OutputSizeLimit`Skeleton",
+           DisplayFunction->(FrameBox[
+             RowBox[{"\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+             Background -> GrayLevel[0.75], 
+             BaseStyle -> {
+              "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+               ShowStringCharacters -> False}, BaselinePosition -> Baseline, 
+             ContentPadding -> False, FrameMargins -> 1, FrameStyle -> 
+             GrayLevel[0.75], RoundingRadius -> 7]& )], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{70., {3., 9.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{62., {1., 9.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 5, 31714471845385456314, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{68., {1., 9.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 5, 31714471845385456314, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{52., {1., 9.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 5, 31714471845385456314, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{91., {1., 9.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[5]]], "Output",
+ CellChangeTimes->{3.620532887072147*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["distribution test (2)", "Section",
+ CellChangeTimes->{{3.6205322033766737`*^9, 3.620532232330711*^9}, {
+  3.6205327209622507`*^9, 3.620532730590522*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"t", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"i", "+", "j"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "5000"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "5000"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.620532235382655*^9, 3.620532267195107*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"t2", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"i", "+", "j"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "10000"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "10000"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.620532235382655*^9, 3.6205322897114964`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DistributeDefinitions", "[", "t2", "]"}]], "Input",
+ CellChangeTimes->{{3.62052985947805*^9, 3.620529864330675*^9}, {
+  3.62053230628195*^9, 3.6205323080648413`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox["t2",
+   HoldForm], "}"}]], "Output",
+ CellChangeTimes->{3.620532309912532*^9, 3.620532508911281*^9, 
+  3.6205327700750313`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"ParallelSubmit", "[", 
+    RowBox[{
+     RowBox[{"{", "n", "}"}], ",", 
+     RowBox[{"t2", "[", 
+      RowBox[{"[", 
+       RowBox[{"n", ",", "4"}], "]"}], "]"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6205287971569033`*^9, 3.6205288991921577`*^9}, {
+  3.620528946412315*^9, 3.620528951638055*^9}, {3.620529173385828*^9, 
+  3.6205291977707*^9}, {3.620529414077973*^9, 3.6205294429354153`*^9}, {
+  3.620530066733399*^9, 3.620530073220759*^9}, {3.6205301294254313`*^9, 
+  3.620530146818507*^9}, {3.620532588942971*^9, 3.6205325965573397`*^9}, {
+  3.620532751403492*^9, 3.620532751948745*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   InterpretationBox[
+    FrameBox[
+     TemplateBox[{DynamicBox[
+        ToBoxes[
+         Parallel`Concurrency`Private`evalIcon[
+          ReplaceAll[
+           Parallel`Developer`ProcessState[
+            EvaluationObject[1, 
+             Part[$CellContext`t2, 1, 4], Null, 
+             Parallel`Concurrency`Private`state$867]], 
+           Parallel`Concurrency`Private`stateTrans]], StandardForm]],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {6, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[6]],TagBox[
+        GridBox[{{
+           PaneBox[
+            StyleBox[
+             TagBox[
+              RowBox[{"t2", "\[LeftDoubleBracket]", 
+                RowBox[{"1", ",", "4"}], "\[RightDoubleBracket]"}], 
+              Short[#, 0.6]& ], Small, StripOnInput -> False], 
+            ImageSize -> {Full, 18}, ImageSizeAction -> "ResizeToFit"]}, {
+           DynamicBox[
+            ToBoxes[
+             Style[
+              ReplaceAll[
+               Parallel`Developer`ProcessState[
+                EvaluationObject[1, 
+                 Part[$CellContext`t2, 1, 4], Null, 
+                 Parallel`Concurrency`Private`state$867]], {
+               Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
+                "ready for processing", Parallel`Developer`running[
+                  Pattern[Parallel`Concurrency`Private`k, 
+                   Blank[]]] :> StringForm["running on kernel `1`", 
+                  Parallel`Developer`KernelID[
+                  Parallel`Concurrency`Private`k]], 
+                Parallel`Developer`finished[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "received", 
+                Parallel`Developer`dequeued[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "finished", 
+                Pattern[Parallel`Concurrency`Private`e, 
+                  Blank[]] :> Parallel`Concurrency`Private`e}], "Label", 
+              Gray], StandardForm]]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {"Columns" -> {{10}}, "Rows" -> {{Automatic}}}], 
+        "Column"]},
+      "RowDefault"],
+     Background->Dynamic[
+       Part[Parallel`Concurrency`Private`bgColors, 
+        ReplaceAll[
+         Parallel`Developer`ProcessState[
+          EvaluationObject[1, 
+           Part[$CellContext`t2, 1, 4], Null, 
+           Parallel`Concurrency`Private`state$867]], 
+         Parallel`Concurrency`Private`stateTrans]]],
+     FrameMargins->5,
+     FrameStyle->GrayLevel[0.5],
+     RoundingRadius->6,
+     StripOnInput->False],
+    EvaluationObject[1, 
+     Part[$CellContext`t2, 1, 4], Null, 
+     Parallel`Concurrency`Private`state$867]], ",", 
+   InterpretationBox[
+    FrameBox[
+     TemplateBox[{DynamicBox[
+        ToBoxes[
+         Parallel`Concurrency`Private`evalIcon[
+          ReplaceAll[
+           Parallel`Developer`ProcessState[
+            EvaluationObject[2, 
+             Part[$CellContext`t2, 2, 4], Null, 
+             Parallel`Concurrency`Private`state$868]], 
+           Parallel`Concurrency`Private`stateTrans]], StandardForm]],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {6, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[6]],TagBox[
+        GridBox[{{
+           PaneBox[
+            StyleBox[
+             TagBox[
+              RowBox[{"t2", "\[LeftDoubleBracket]", 
+                RowBox[{"2", ",", "4"}], "\[RightDoubleBracket]"}], 
+              Short[#, 0.6]& ], Small, StripOnInput -> False], 
+            ImageSize -> {Full, 18}, ImageSizeAction -> "ResizeToFit"]}, {
+           DynamicBox[
+            ToBoxes[
+             Style[
+              ReplaceAll[
+               Parallel`Developer`ProcessState[
+                EvaluationObject[2, 
+                 Part[$CellContext`t2, 2, 4], Null, 
+                 Parallel`Concurrency`Private`state$868]], {
+               Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
+                "ready for processing", Parallel`Developer`running[
+                  Pattern[Parallel`Concurrency`Private`k, 
+                   Blank[]]] :> StringForm["running on kernel `1`", 
+                  Parallel`Developer`KernelID[
+                  Parallel`Concurrency`Private`k]], 
+                Parallel`Developer`finished[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "received", 
+                Parallel`Developer`dequeued[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "finished", 
+                Pattern[Parallel`Concurrency`Private`e, 
+                  Blank[]] :> Parallel`Concurrency`Private`e}], "Label", 
+              Gray], StandardForm]]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {"Columns" -> {{10}}, "Rows" -> {{Automatic}}}], 
+        "Column"]},
+      "RowDefault"],
+     Background->Dynamic[
+       Part[Parallel`Concurrency`Private`bgColors, 
+        ReplaceAll[
+         Parallel`Developer`ProcessState[
+          EvaluationObject[2, 
+           Part[$CellContext`t2, 2, 4], Null, 
+           Parallel`Concurrency`Private`state$868]], 
+         Parallel`Concurrency`Private`stateTrans]]],
+     FrameMargins->5,
+     FrameStyle->GrayLevel[0.5],
+     RoundingRadius->6,
+     StripOnInput->False],
+    EvaluationObject[2, 
+     Part[$CellContext`t2, 2, 4], Null, 
+     Parallel`Concurrency`Private`state$868]], ",", 
+   InterpretationBox[
+    FrameBox[
+     TemplateBox[{DynamicBox[
+        ToBoxes[
+         Parallel`Concurrency`Private`evalIcon[
+          ReplaceAll[
+           Parallel`Developer`ProcessState[
+            EvaluationObject[3, 
+             Part[$CellContext`t2, 3, 4], Null, 
+             Parallel`Concurrency`Private`state$869]], 
+           Parallel`Concurrency`Private`stateTrans]], StandardForm]],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {6, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[6]],TagBox[
+        GridBox[{{
+           PaneBox[
+            StyleBox[
+             TagBox[
+              RowBox[{"t2", "\[LeftDoubleBracket]", 
+                RowBox[{"3", ",", "4"}], "\[RightDoubleBracket]"}], 
+              Short[#, 0.6]& ], Small, StripOnInput -> False], 
+            ImageSize -> {Full, 18}, ImageSizeAction -> "ResizeToFit"]}, {
+           DynamicBox[
+            ToBoxes[
+             Style[
+              ReplaceAll[
+               Parallel`Developer`ProcessState[
+                EvaluationObject[3, 
+                 Part[$CellContext`t2, 3, 4], Null, 
+                 Parallel`Concurrency`Private`state$869]], {
+               Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
+                "ready for processing", Parallel`Developer`running[
+                  Pattern[Parallel`Concurrency`Private`k, 
+                   Blank[]]] :> StringForm["running on kernel `1`", 
+                  Parallel`Developer`KernelID[
+                  Parallel`Concurrency`Private`k]], 
+                Parallel`Developer`finished[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "received", 
+                Parallel`Developer`dequeued[
+                  Pattern[Parallel`Concurrency`Private`r, 
+                   BlankNullSequence[]]] :> "finished", 
+                Pattern[Parallel`Concurrency`Private`e, 
+                  Blank[]] :> Parallel`Concurrency`Private`e}], "Label", 
+              Gray], StandardForm]]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {"Columns" -> {{10}}, "Rows" -> {{Automatic}}}], 
+        "Column"]},
+      "RowDefault"],
+     Background->Dynamic[
+       Part[Parallel`Concurrency`Private`bgColors, 
+        ReplaceAll[
+         Parallel`Developer`ProcessState[
+          EvaluationObject[3, 
+           Part[$CellContext`t2, 3, 4], Null, 
+           Parallel`Concurrency`Private`state$869]], 
+         Parallel`Concurrency`Private`stateTrans]]],
+     FrameMargins->5,
+     FrameStyle->GrayLevel[0.5],
+     RoundingRadius->6,
+     StripOnInput->False],
+    EvaluationObject[3, 
+     Part[$CellContext`t2, 3, 4], Null, 
+     Parallel`Concurrency`Private`state$869]]}], "}"}]], "Output",
+ CellChangeTimes->{3.6205326062371817`*^9, 3.620532677459939*^9, 
+  3.62053277768535*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WaitAll", "[", "%", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"5", ",", "6", ",", "7"}], "}"}]], "Output",
+ CellChangeTimes->{3.620532796576622*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{808, 877},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"10.0 for Linux x86 (64-bit) (2014\:5e749\:67089\:65e5)",
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -394,9 +1117,9 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 103, 1, 107, "Title"],
+Cell[580, 22, 103, 1, 96, "Title"],
 Cell[CellGroupData[{
-Cell[708, 27, 100, 1, 75, "Section"],
+Cell[708, 27, 100, 1, 67, "Section"],
 Cell[CellGroupData[{
 Cell[833, 32, 379, 10, 32, "Input"],
 Cell[1215, 44, 326, 9, 32, "Output"]
@@ -407,7 +1130,7 @@ Cell[1724, 62, 120, 4, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1881, 71, 642, 15, 32, "Input"],
-Cell[2526, 88, 9356, 227, 64, "Output"]
+Cell[2526, 88, 9356, 227, 65, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[11919, 320, 80, 2, 32, "Input",
@@ -416,12 +1139,37 @@ Cell[12002, 324, 278, 6, 32, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12329, 336, 104, 1, 75, "Section"],
-Cell[12436, 339, 339, 10, 32, "Input"],
-Cell[12778, 351, 344, 10, 32, "Input"],
+Cell[12329, 336, 158, 2, 67, "Section"],
+Cell[12490, 340, 339, 10, 32, "Input"],
+Cell[12832, 352, 344, 10, 32, "Input"],
 Cell[CellGroupData[{
-Cell[13147, 365, 190, 3, 32, "Input"],
-Cell[13340, 370, 117, 4, 32, "Output"]
+Cell[13201, 366, 190, 3, 32, "Input"],
+Cell[13394, 371, 166, 5, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13597, 381, 644, 14, 32, "Input"],
+Cell[14244, 397, 8662, 208, 65, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22943, 610, 60, 1, 32, "Input"],
+Cell[23006, 613, 7639, 199, 92, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30694, 818, 159, 2, 67, "Section"],
+Cell[30856, 822, 339, 10, 32, "Input"],
+Cell[31198, 834, 344, 10, 32, "Input"],
+Cell[CellGroupData[{
+Cell[31567, 848, 190, 3, 32, "Input"],
+Cell[31760, 853, 166, 5, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31963, 863, 721, 16, 32, "Input"],
+Cell[32687, 881, 8717, 205, 65, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41441, 1091, 60, 1, 32, "Input"],
+Cell[41504, 1094, 125, 3, 32, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
