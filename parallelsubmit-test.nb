@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     48089,       1322]
-NotebookOptionsPosition[     45187,       1213]
-NotebookOutlinePosition[     45530,       1228]
-CellTagsIndexPosition[     45487,       1225]
+NotebookDataLength[     49441,       1353]
+NotebookOptionsPosition[     46423,       1240]
+NotebookOutlinePosition[     46766,       1255]
+CellTagsIndexPosition[     46723,       1252]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -905,11 +905,25 @@ Cell["distribution test (2)", "Section",
 
 Cell[CellGroupData[{
 
+Cell[BoxData[
+ RowBox[{"CloseKernels", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.621051858276224*^9, 3.621051864478446*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.621051865513741*^9, 3.621051882387183*^9}, 
+   3.621051937375098*^9, 3.621052020687158*^9, 3.621052053481205*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell[BoxData["$KernelCount"], "Input",
  CellChangeTimes->{{3.621039865539774*^9, 3.6210398681491947`*^9}}],
 
 Cell[BoxData["0"], "Output",
- CellChangeTimes->{3.621039971333591*^9}]
+ CellChangeTimes->{3.621039971333591*^9, 3.621051844016739*^9, 
+  3.621051882758226*^9, 3.621051938156042*^9, 3.6210520211033163`*^9, 
+  3.621052053963325*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -946,7 +960,9 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{"{", "}"}]], "Output",
  CellChangeTimes->{3.620532309912532*^9, 3.620532508911281*^9, 
-  3.6205327700750313`*^9, 3.621039977956347*^9}]
+  3.6205327700750313`*^9, 3.621039977956347*^9, 3.621051781062965*^9, 
+  3.621051889254396*^9, 3.6210519444922943`*^9, 3.621052027773979*^9, 
+  3.621052060514666*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -955,7 +971,9 @@ Cell[BoxData["$KernelCount"], "Input",
  CellChangeTimes->{{3.621039865539774*^9, 3.6210398681491947`*^9}}],
 
 Cell[BoxData["0"], "Output",
- CellChangeTimes->{3.6210399782741413`*^9}]
+ CellChangeTimes->{3.6210399782741413`*^9, 3.621051784513269*^9, 
+  3.621051889755021*^9, 3.62105194452536*^9, 3.621052028573839*^9, 
+  3.6210520609451637`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -969,7 +987,7 @@ Cell[BoxData[
       RowBox[{"{", "n", "}"}], ",", 
       RowBox[{"t2", "[", 
        RowBox[{"[", 
-        RowBox[{"n", ",", "4"}], "]"}], "]"}]}], "]"}], ",", 
+        RowBox[{"n", ",", "2"}], "]"}], "]"}]}], "]"}], ",", 
     RowBox[{"{", 
      RowBox[{"n", ",", "3"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.6205287971569033`*^9, 3.6205288991921577`*^9}, {
@@ -978,7 +996,8 @@ Cell[BoxData[
   3.620530066733399*^9, 3.620530073220759*^9}, {3.6205301294254313`*^9, 
   3.620530146818507*^9}, {3.620532588942971*^9, 3.6205325965573397`*^9}, {
   3.620532751403492*^9, 3.620532751948745*^9}, {3.621039941274784*^9, 
-  3.621039943188933*^9}}],
+  3.621039943188933*^9}, {3.6210520450723057`*^9, 3.621052045382145*^9}, {
+  3.621052113101713*^9, 3.6210521134131308`*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -990,9 +1009,9 @@ Cell[BoxData[
          Parallel`Concurrency`Private`evalIcon[
           ReplaceAll[
            Parallel`Developer`ProcessState[
-            EvaluationObject[16, 
-             Part[$CellContext`t2, 1, 4], Null, 
-             Parallel`Concurrency`Private`state$4682]], 
+            EvaluationObject[13, 
+             Part[$CellContext`t2, 1, 2], Null, 
+             Parallel`Concurrency`Private`state$1346]], 
            Parallel`Concurrency`Private`stateTrans]], StandardForm]],
        InterpretationBox[
         StyleBox[
@@ -1004,7 +1023,7 @@ Cell[BoxData[
             StyleBox[
              TagBox[
               RowBox[{"t2", "\[LeftDoubleBracket]", 
-                RowBox[{"1", ",", "4"}], "\[RightDoubleBracket]"}], 
+                RowBox[{"1", ",", "2"}], "\[RightDoubleBracket]"}], 
               Short[#, 0.6]& ], Small, StripOnInput -> False], 
             ImageSize -> {Full, 18}, ImageSizeAction -> "ResizeToFit"]}, {
            DynamicBox[
@@ -1012,9 +1031,9 @@ Cell[BoxData[
              Style[
               ReplaceAll[
                Parallel`Developer`ProcessState[
-                EvaluationObject[16, 
-                 Part[$CellContext`t2, 1, 4], Null, 
-                 Parallel`Concurrency`Private`state$4682]], {
+                EvaluationObject[13, 
+                 Part[$CellContext`t2, 1, 2], Null, 
+                 Parallel`Concurrency`Private`state$1346]], {
                Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
                 "ready for processing", Parallel`Developer`running[
                   Pattern[Parallel`Concurrency`Private`k, 
@@ -1039,17 +1058,17 @@ Cell[BoxData[
        Part[Parallel`Concurrency`Private`bgColors, 
         ReplaceAll[
          Parallel`Developer`ProcessState[
-          EvaluationObject[16, 
-           Part[$CellContext`t2, 1, 4], Null, 
-           Parallel`Concurrency`Private`state$4682]], 
+          EvaluationObject[13, 
+           Part[$CellContext`t2, 1, 2], Null, 
+           Parallel`Concurrency`Private`state$1346]], 
          Parallel`Concurrency`Private`stateTrans]]],
      FrameMargins->5,
      FrameStyle->GrayLevel[0.5],
      RoundingRadius->6,
      StripOnInput->False],
-    EvaluationObject[16, 
-     Part[$CellContext`t2, 1, 4], Null, 
-     Parallel`Concurrency`Private`state$4682]], ",", 
+    EvaluationObject[13, 
+     Part[$CellContext`t2, 1, 2], Null, 
+     Parallel`Concurrency`Private`state$1346]], ",", 
    InterpretationBox[
     FrameBox[
      TemplateBox[{DynamicBox[
@@ -1057,9 +1076,9 @@ Cell[BoxData[
          Parallel`Concurrency`Private`evalIcon[
           ReplaceAll[
            Parallel`Developer`ProcessState[
-            EvaluationObject[17, 
-             Part[$CellContext`t2, 2, 4], Null, 
-             Parallel`Concurrency`Private`state$4683]], 
+            EvaluationObject[14, 
+             Part[$CellContext`t2, 2, 2], Null, 
+             Parallel`Concurrency`Private`state$1347]], 
            Parallel`Concurrency`Private`stateTrans]], StandardForm]],
        InterpretationBox[
         StyleBox[
@@ -1071,7 +1090,7 @@ Cell[BoxData[
             StyleBox[
              TagBox[
               RowBox[{"t2", "\[LeftDoubleBracket]", 
-                RowBox[{"2", ",", "4"}], "\[RightDoubleBracket]"}], 
+                RowBox[{"2", ",", "2"}], "\[RightDoubleBracket]"}], 
               Short[#, 0.6]& ], Small, StripOnInput -> False], 
             ImageSize -> {Full, 18}, ImageSizeAction -> "ResizeToFit"]}, {
            DynamicBox[
@@ -1079,9 +1098,9 @@ Cell[BoxData[
              Style[
               ReplaceAll[
                Parallel`Developer`ProcessState[
-                EvaluationObject[17, 
-                 Part[$CellContext`t2, 2, 4], Null, 
-                 Parallel`Concurrency`Private`state$4683]], {
+                EvaluationObject[14, 
+                 Part[$CellContext`t2, 2, 2], Null, 
+                 Parallel`Concurrency`Private`state$1347]], {
                Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
                 "ready for processing", Parallel`Developer`running[
                   Pattern[Parallel`Concurrency`Private`k, 
@@ -1106,17 +1125,17 @@ Cell[BoxData[
        Part[Parallel`Concurrency`Private`bgColors, 
         ReplaceAll[
          Parallel`Developer`ProcessState[
-          EvaluationObject[17, 
-           Part[$CellContext`t2, 2, 4], Null, 
-           Parallel`Concurrency`Private`state$4683]], 
+          EvaluationObject[14, 
+           Part[$CellContext`t2, 2, 2], Null, 
+           Parallel`Concurrency`Private`state$1347]], 
          Parallel`Concurrency`Private`stateTrans]]],
      FrameMargins->5,
      FrameStyle->GrayLevel[0.5],
      RoundingRadius->6,
      StripOnInput->False],
-    EvaluationObject[17, 
-     Part[$CellContext`t2, 2, 4], Null, 
-     Parallel`Concurrency`Private`state$4683]], ",", 
+    EvaluationObject[14, 
+     Part[$CellContext`t2, 2, 2], Null, 
+     Parallel`Concurrency`Private`state$1347]], ",", 
    InterpretationBox[
     FrameBox[
      TemplateBox[{DynamicBox[
@@ -1124,9 +1143,9 @@ Cell[BoxData[
          Parallel`Concurrency`Private`evalIcon[
           ReplaceAll[
            Parallel`Developer`ProcessState[
-            EvaluationObject[18, 
-             Part[$CellContext`t2, 3, 4], Null, 
-             Parallel`Concurrency`Private`state$4684]], 
+            EvaluationObject[15, 
+             Part[$CellContext`t2, 3, 2], Null, 
+             Parallel`Concurrency`Private`state$1348]], 
            Parallel`Concurrency`Private`stateTrans]], StandardForm]],
        InterpretationBox[
         StyleBox[
@@ -1138,7 +1157,7 @@ Cell[BoxData[
             StyleBox[
              TagBox[
               RowBox[{"t2", "\[LeftDoubleBracket]", 
-                RowBox[{"3", ",", "4"}], "\[RightDoubleBracket]"}], 
+                RowBox[{"3", ",", "2"}], "\[RightDoubleBracket]"}], 
               Short[#, 0.6]& ], Small, StripOnInput -> False], 
             ImageSize -> {Full, 18}, ImageSizeAction -> "ResizeToFit"]}, {
            DynamicBox[
@@ -1146,9 +1165,9 @@ Cell[BoxData[
              Style[
               ReplaceAll[
                Parallel`Developer`ProcessState[
-                EvaluationObject[18, 
-                 Part[$CellContext`t2, 3, 4], Null, 
-                 Parallel`Concurrency`Private`state$4684]], {
+                EvaluationObject[15, 
+                 Part[$CellContext`t2, 3, 2], Null, 
+                 Parallel`Concurrency`Private`state$1348]], {
                Parallel`Developer`created -> "new", Parallel`Developer`queued -> 
                 "ready for processing", Parallel`Developer`running[
                   Pattern[Parallel`Concurrency`Private`k, 
@@ -1173,19 +1192,22 @@ Cell[BoxData[
        Part[Parallel`Concurrency`Private`bgColors, 
         ReplaceAll[
          Parallel`Developer`ProcessState[
-          EvaluationObject[18, 
-           Part[$CellContext`t2, 3, 4], Null, 
-           Parallel`Concurrency`Private`state$4684]], 
+          EvaluationObject[15, 
+           Part[$CellContext`t2, 3, 2], Null, 
+           Parallel`Concurrency`Private`state$1348]], 
          Parallel`Concurrency`Private`stateTrans]]],
      FrameMargins->5,
      FrameStyle->GrayLevel[0.5],
      RoundingRadius->6,
      StripOnInput->False],
-    EvaluationObject[18, 
-     Part[$CellContext`t2, 3, 4], Null, 
-     Parallel`Concurrency`Private`state$4684]]}], "}"}]], "Output",
- CellChangeTimes->{3.6205326062371817`*^9, 3.620532677459939*^9, 
-  3.62053277768535*^9, 3.621039978749878*^9}]
+    EvaluationObject[15, 
+     Part[$CellContext`t2, 3, 2], Null, 
+     Parallel`Concurrency`Private`state$1348]]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.6205326062371817`*^9, 3.620532677459939*^9, 3.62053277768535*^9, 
+   3.621039978749878*^9, 3.621051787521677*^9, 3.621051890315688*^9, 
+   3.621051945140791*^9, 3.621052029263021*^9, {3.62105206138063*^9, 
+   3.6210521146120167`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1194,7 +1216,9 @@ Cell[BoxData["$KernelCount"], "Input",
  CellChangeTimes->{{3.621039865539774*^9, 3.6210398681491947`*^9}}],
 
 Cell[BoxData["0"], "Output",
- CellChangeTimes->{3.6210399791811666`*^9}]
+ CellChangeTimes->{3.6210399791811666`*^9, 3.621051790173914*^9, 
+  3.62105189087984*^9, 3.6210519452452917`*^9, 3.621052029908082*^9, 
+  3.621052061811905*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1205,8 +1229,11 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"5", ",", "6", ",", "7"}], "}"}]], "Output",
- CellChangeTimes->{3.620532796576622*^9, 3.621039979212707*^9}]
+  RowBox[{"3", ",", "4", ",", "5"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.620532796576622*^9, 3.621039979212707*^9, 3.6210518328488407`*^9, 
+   3.621051890911634*^9, {3.621051986956703*^9, 3.621052030372149*^9}, 
+   3.621052062250688*^9, {3.621052097391973*^9, 3.6210521177305326`*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1297,30 +1324,34 @@ Cell[25451, 692, 7845, 203, 89, "Output"]
 Cell[CellGroupData[{
 Cell[33345, 901, 159, 2, 75, "Section"],
 Cell[CellGroupData[{
-Cell[33529, 907, 106, 1, 32, "Input"],
-Cell[33638, 910, 70, 1, 32, "Output"]
-}, Open  ]],
-Cell[33723, 914, 339, 10, 32, "Input"],
-Cell[34065, 926, 344, 10, 32, "Input"],
-Cell[CellGroupData[{
-Cell[34434, 940, 190, 3, 32, "Input"],
-Cell[34627, 945, 158, 3, 32, "Output"]
+Cell[33529, 907, 126, 2, 32, "Input"],
+Cell[33658, 911, 181, 3, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34822, 953, 106, 1, 32, "Input"],
-Cell[34931, 956, 72, 1, 32, "Output"]
+Cell[33876, 919, 106, 1, 32, "Input"],
+Cell[33985, 922, 188, 3, 32, "Output"]
+}, Open  ]],
+Cell[34188, 928, 339, 10, 32, "Input"],
+Cell[34530, 940, 344, 10, 32, "Input"],
+Cell[CellGroupData[{
+Cell[34899, 954, 190, 3, 32, "Input"],
+Cell[35092, 959, 276, 5, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35040, 962, 805, 18, 32, "Input"],
-Cell[35848, 982, 8763, 205, 64, "Output"]
+Cell[35405, 969, 106, 1, 32, "Input"],
+Cell[35514, 972, 189, 3, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44648, 1192, 106, 1, 32, "Input"],
-Cell[44757, 1195, 72, 1, 32, "Output"]
+Cell[35740, 980, 904, 19, 32, "Input"],
+Cell[36647, 1001, 8910, 208, 64, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44866, 1201, 131, 2, 32, "Input"],
-Cell[45000, 1205, 147, 3, 32, "Output"]
+Cell[45594, 1214, 106, 1, 32, "Input"],
+Cell[45703, 1217, 189, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45929, 1225, 131, 2, 32, "Input"],
+Cell[46063, 1229, 320, 6, 32, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
