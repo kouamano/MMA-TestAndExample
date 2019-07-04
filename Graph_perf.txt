@@ -1,0 +1,58 @@
+(base) [kamano@n007 ~]$ math
+Mathematica 12.0.0 Kernel for Linux x86 (64-bit)
+Copyright 1988-2019 Wolfram Research, Inc.
+
+In[1]:= Timing[r=Table[RandomInteger[{1,1000000000}]<->RandomInteger[{1,10000000
+00}],{100000000}];]                                                             
+
+Out[1]= {64.7552, Null}
+
+In[2]:= c=Outer[TwoWayRule,{1,2,3,4,5},{1,2,3,4,5}]                             
+
+Out[2]= {{1 <-> 1, 1 <-> 2, 1 <-> 3, 1 <-> 4, 1 <-> 5}, 
+ 
+>    {2 <-> 1, 2 <-> 2, 2 <-> 3, 2 <-> 4, 2 <-> 5}, 
+ 
+>    {3 <-> 1, 3 <-> 2, 3 <-> 3, 3 <-> 4, 3 <-> 5}, 
+ 
+>    {4 <-> 1, 4 <-> 2, 4 <-> 3, 4 <-> 4, 4 <-> 5}, 
+ 
+>    {5 <-> 1, 5 <-> 2, 5 <-> 3, 5 <-> 4, 5 <-> 5}}
+
+In[3]:= v=Table[RandomInteger[{1,1000000000}],{10000000}];                      
+
+In[4]:= Timing[gr=Graph[v,Flatten[{r,c}]]]                                      
+
+Out[4]= {245.118, Graph[<189417725>, <100000025>]}
+
+In[5]:= Timing[(vl=VertexList[gr])//Length]                                     
+
+Out[5]= {0., 189417725}
+
+In[6]:= Timing[(el=EdgeList[gr])//Length]                                       
+
+Out[6]= {38.7531, 100000025}
+
+In[7]:= v[[1]]                                                                  
+
+Out[7]= 306201488
+
+In[8]:= Timing[Cases[el,UndirectedEdge[x_,y_]/;(x==1||y==1)]]                   
+
+Out[8]= {79.7539, {1  1, 1  2, 1  3, 1  4, 1  5, 2  1, 
+ 
+>     3  1, 4  1, 5  1}}
+
+In[9]:= Timing[gc=ConnectedComponents[gr];]                                     
+
+Out[9]= {190.109, Null}
+
+In[10]:= Timing[pg=PathGraph[Range[100000000]]]                                 
+
+Out[10]= {135.091, Graph[<100000000>, <99999999>]}
+
+In[11]:= Timing[(cmps=ConnectedComponents[pg])//Length]                         
+
+Out[11]= {0., 1}
+
+In[12]:=                                                                        
