@@ -1,0 +1,137 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4134,        129]
+NotebookOptionsPosition[      3835,        116]
+NotebookOutlinePosition[      4181,        131]
+CellTagsIndexPosition[      4138,        128]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"gr1", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"j", "\[UndirectedEdge]", 
+      RowBox[{"FromDigits", "[", 
+       RowBox[{
+        RowBox[{"Drop", "[", 
+         RowBox[{
+          RowBox[{"IntegerDigits", "[", 
+           RowBox[{"j", ",", "2"}], "]"}], ",", "1"}], "]"}], ",", "2"}], 
+       "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "0", ",", 
+       RowBox[{
+        RowBox[{"2", "^", "8"}], "-", "1"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gr2", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"#1", "\[UndirectedEdge]", "#2"}], ")"}], "&"}], "@@@", 
+    RowBox[{"RandomInteger", "[", 
+     RowBox[{"100", ",", 
+      RowBox[{"{", 
+       RowBox[{"300", ",", "2"}], "}"}]}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"gr3", "=", 
+    RowBox[{
+     RowBox[{"GridGraph", "[", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "6", ",", "4"}], "}"}], "]"}], "//", "EdgeList"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Graph3D", "[", 
+      RowBox[{
+       RowBox[{"#", "//", 
+        RowBox[{
+         RowBox[{"Append", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"#", "\[UndirectedEdge]", "#"}], ")"}], "&"}], "@", 
+             RowBox[{"(", 
+              RowBox[{"num", "=", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"Length", "@", "#"}], "+", "1"}], ")"}]}], ")"}]}], 
+            ")"}]}], "]"}], "&"}]}], "\[IndentingNewLine]", ",", 
+       RowBox[{"GraphLayout", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{"\"\<StarEmbedding\>\"", ",", 
+          RowBox[{"Center", "\[Rule]", "num"}]}], "}"}]}], 
+       "\[IndentingNewLine]", ",", 
+       RowBox[{"GraphStyle", "->", "\"\<LargeNetwork\>\""}], 
+       "\[IndentingNewLine]", ",", 
+       RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "\[IndentingNewLine]", 
+      "]"}], "&"}], "@", 
+    StyleBox[
+     RowBox[{"(", "gr1", ")"}],
+     FontColor->RGBColor[0, 0, 1]]}], "//", "SimpleGraph"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Opacity", "[", ".5", "]"}], ",", 
+        RowBox[{"Sphere", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "1"}], "]"}]}], 
+       "}"}], "]"}], ",", 
+     RowBox[{"Lighting", "->", "\"\<Neutral\>\""}]}], "]"}], "&"}], "@", 
+  "%"}]}], "Input",
+ CellChangeTimes->{{3.791021233624132*^9, 3.7910214074719*^9}, {
+  3.791021487891265*^9, 3.791022275716614*^9}, {3.7910223127548437`*^9, 
+  3.791022364915609*^9}, {3.791022480482065*^9, 3.791022629104288*^9}, {
+  3.7910226604855547`*^9, 3.79102279306988*^9}, {3.791022834106715*^9, 
+  3.791022905300314*^9}, {3.791022988030882*^9, 3.791022992865541*^9}, {
+  3.791023213051835*^9, 3.7910232316746683`*^9}, {3.7910233915869017`*^9, 
+  3.791023478226008*^9}},
+ CellLabel->
+  "In[320]:=",ExpressionUUID->"18a3dbe2-13a2-49b3-a103-0fc45a0a6b98"]
+},
+WindowSize->{808, 675},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (2019\:5e745\:67083\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3273, 94, 241, "Input",ExpressionUUID->"18a3dbe2-13a2-49b3-a103-0fc45a0a6b98"]
+}
+]
+*)
+
